@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="api.js"></script>
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--Iconos de ICONS8-->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!--FUENTES DE GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+
+    <!--ICONOS DE FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0daea9778b.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="contacto.css">
+    <!--Api mapa-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- Generador de pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!--Inicio Menu-->
+    <header>
+        <div class="navbar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary nav-menu">
+                <div class="container-fluid">
+                    <div class="logo-principal">
+                        <div class="navlogo"><img src="rycky and morty.png" alt="logotipo" class="logotipo"></div>
+
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="titulo d-none d-xl-block">
+                        <p><i>Tecnologia</i></p>
+                    </div>
+                    <div class="collapse navbar-collapse nav-menu__items" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Tp final/index.html">Inicio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <!--Fin Menu-->
+
+    <!--Fondo Carusel-->
+    <div class="fondo-top">
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="slide-item">
+                    <img src="img/discord 2">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/discord 33">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/discord 4">
+                </div>
+                <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/discord 5">
+                </div>
+                <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/discord 6">
+                </div>
+                <label for="slide-5" class="slide-control prev control-1">‹</label>
+                <label for="slide-5" class="slide-control next control-4">›</label>
+                <label for="slide-4" class="slide-control prev control-5">‹</label>
+                <label for="slide-4" class="slide-control next control-3">›</label>
+                <label for="slide-3" class="slide-control prev control-4">‹</label>
+                <label for="slide-3" class="slide-control next control-2">›</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-1" class="slide-control next control-5">›</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-4" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-5" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--MAPA-->
+    <div class="mapaimagen">
+        <div class="ubicacion__mapa">
+            <iframe class="mapa-ubi"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3122.5631749524937!2d-0.2592359880160538!3d38.497720470069396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDI5JzUxLjgiTiAwwrAxNScyNC4wIlc!5e0!3m2!1ses!2sar!4v1681770206953!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <img src="./Tecnologia.png">
+
+    </div>
+
+
+<!-- Formulario de contacto-->
+    <div class="contac">
+        <h2 class="titulo-correo">Contactanos</h2>
+            <h3 class="subtitulo-correo">Haznos saber tus inquietudes</h3>
+        <div class="contacto_general">
+            <div class="contacto_form">
+                <form method="POST" name="frmEnv" class="form-contacto" action="https://formspree.io/f/xvonvjae">
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" name="nombreCompleto" id="nombre">
+                    </p>
+
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" id="telef" name="telefono"  >
+                      
+                    </p>
+
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="asunto" id="asunto">
+                    </p>
+
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="3" id="mensaje"></textarea>
+                    </p>
+                    <button onclick="generarPDF()">Enviar</button>
+
+
+
+
+                </form>
+            </div>
+            
+            <div class="contacto_info">
+                <h4>Mas informacion</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>Ciudad Jardin</li>
+                    <li><i class="fa-solid fa-phone"></i></i> 0800-321-4512</li>
+                    <li><i class="fa-solid fa-envelope"></i>LaTecnologia@gmail.com</li>
+                </ul>
+                <p style="color: blue">Gracias por visitar nuestro sitio web, nos ayudarias muchisimo se dejas tus
+                    recomendacion o consejos
+                    para seguir creciendo en este hermoso proyecto,
+                    desde ya Muchas Gracias.</p>
+                <p>Tecnologia</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <footer class="footer">
+
+        <div class="botones">
+            <div class="footer-logo">
+                <a href="/Tp final/index.html" class="logo"><img src="rycky and morty.png" alt="" class="logo"></a>
+            </div>
+
+            <div class="contacto">
+                <h4>• Contacto:</h4>
+                <p>- Dirección: Ciudad Jardin</p>
+                <p>- Correo:LaTecnologia@gmail.com </p>
+                <p>- Tel:0800-321-4512</p>
+            </div>
+
+            <div class="redes">
+                <h4>• Redes Sociales:</h4>
+                <div class="icons">
+                    <div class="text"><a href="https://www.instagram.com" target="_blank"><i
+                                class="lab la-instagram"></i></a> Instagram</div>
+                    <div class="text"><a href="https://www.twitter.com" target="_blank"><i
+                                class="lab la-twitter"></i></a> Twitter</div>
+                    <div class="text"><a href="https://www.facebook.com" target="_blank"><i
+                                class="lab la-facebook"></i></a> Facebook</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map">
+            <div id="api">
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=iniciarMap&v=weekly"
+                    defer class="mapa"></script>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>Desarrollo Web</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
